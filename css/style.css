@@ -1,9 +1,13 @@
-/* -------------------------------stylesheet for index page--------------------------- */
+/* ------------------------------- stylesheet for index page --------------------------- */
+.main {
+  height: 100vh;
+}
+
 body.index {
   text-align: center;
-  background: url("https://i.imgur.com/c0ZdYLb.jpg");
-  /* background: url("./images/compressed/background-header.jpg");
-  background-image: url("./images/compressed/background-header.jpg"); */
+  /* background: url("https://i.imgur.com/c0ZdYLb.jpg"); */
+  background-repeat: no-repeat;
+  background-image: url("../images/compressed/background-header.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -15,10 +19,29 @@ p.index {
 }
 
 button.index {
-  background: 	#F546;
+  display: inline-block;
   border: none;
-  padding: 10px;
-  font-size: 18px;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: rgba(128, 29, 23, 0.7);
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+} 
+
+button:hover{
+    background: rgba(128, 29, 23, 0.9);
+}
+
+button:focus {
+  outline-color: transparent;
+  outline-style: none;
 }
 
 img.index {
@@ -28,68 +51,75 @@ img.index {
   margin: 140px 0px 40px 0px;
 }
 
-/* -------------------------------stylesheet for portfolio page--------------------------- */
+/* ------------------------------- stylesheet for portfolio page --------------------------- */
 
-body.portfolio{
-  background-color: #EDEFEC;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;  display: flex;
+.main {
+  height: 100vh;
+}
+
+body.portfolio {
+  /* background-image: url("../images/compressed/portfolio_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  background-color: black;
+}
+
+#tocenter {
+  dispaly: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-h1 {
-  padding-top: 20px;
-  margin-bottom: 5px;
-  color: #5C6060;
-  font-size: 1.5em;
+.container {
+  width: 700px;
+  margin: 10px auto;
+  height: 700px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-rows: 250px 250px 200px;
+  grid-template-columns: 200px 450px;
 }
 
-h2 {
-  font-size: 12px;
-  color: #898989;
-  padding-top: 0;
+.silence {
+  /* add background image and size/position element usng background-* properties */
+  /* background-image: url("../images/compressed/img1.jpg"); */
+  /* object-fit: fill; */
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  /* background: #F3F3F3; */
 }
 
-a {
-  margin: 20px 0;
-  font-size: 12px;
+.leaf {
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 1;
+  /* background-color: red; */
 }
 
-button.portfolio {
-  padding: 5px 45px;
+.lily {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+  /* background: #F3F3F3; */
 }
 
-.inLinePics {
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  position:relative;
+.inari {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 1;
+  /* background-color: blue; */
 }
 
-.photo {
-  width: 250px;
-  height: 275px;
-  display: block;
-  padding: 0;
-  margin: 10px;
+.hakone {
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+  /* background: yellow; */
 }
 
-.label {
-  position: absolute;
-  text-align: center;
-  color: white;
-  font-size: large;
-  width: 250px;
-  height: 31px;
-  bottom: 125px;
-  margin: 10px;
+header, footer {
+  margin: 45px 0;
 }
 
-header {
-  margin: 15px;
-}
-
-footer {
-  margin: 50px;
-}
+/* img.silence, img.lily {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
