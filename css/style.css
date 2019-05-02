@@ -1,0 +1,95 @@
+/* -------------------------------stylesheet for index page--------------------------- */
+body.index {
+  text-align: center;
+  background: url("https://i.imgur.com/c0ZdYLb.jpg");
+  /* background: url("./images/compressed/background-header.jpg");
+  background-image: url("./images/compressed/background-header.jpg"); */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: helvetica;
+}
+
+p.index {
+  font-size: 22px;
+}
+
+button.index {
+  background: 	#F546;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+img.index {
+  width: 130px;
+  border-radius: 50%;
+  filter: drop-shadow(3px 3px 3px rgba(53, 52, 52, 0.5));
+  margin: 140px 0px 40px 0px;
+}
+
+/* -------------------------------stylesheet for portfolio page--------------------------- */
+
+body.portfolio{
+  background-color: #EDEFEC;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  padding-top: 20px;
+  margin-bottom: 5px;
+  color: #5C6060;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 12px;
+  color: #898989;
+  padding-top: 0;
+}
+
+a {
+  margin: 20px 0;
+  font-size: 12px;
+}
+
+button.portfolio {
+  padding: 5px 45px;
+}
+
+.inLinePics {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  position:relative;
+}
+
+.photo {
+  width: 250px;
+  height: 275px;
+  display: block;
+  padding: 0;
+  margin: 10px;
+}
+
+.label {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: large;
+  width: 250px;
+  height: 31px;
+  bottom: 125px;
+  margin: 10px;
+}
+
+header {
+  margin: 15px;
+}
+
+footer {
+  margin: 50px;
+}
